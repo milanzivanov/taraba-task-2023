@@ -1,6 +1,6 @@
 .primary-h1-heading {
   font-family: $primary-font;
-  font-size: 3.8144rem;
+  font-size: 2.8144rem;
   line-height: 1.1;
   color: $black-color;
   padding-bottom: 0.888rem;
@@ -10,6 +10,7 @@
 
 @include breakpoint(desktop) {
   .primary-h1-heading {
+    font-size: 3.8144rem;
     width: 75%;
   }
 }
