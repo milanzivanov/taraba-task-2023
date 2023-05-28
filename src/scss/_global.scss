@@ -1,0 +1,153 @@
+////////////////////////////////
+//  Modern CSS Reset
+////////////////////////////////
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"],
+ul,
+ol {
+  list-style: none;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+a {
+  text-decoration: none;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+//
+.wrapper-inner {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.default-paragraph-text--width {
+  width: 80%;
+}
+
+@include breakpoint(desktop) {
+  .default-paragraph-text--width {
+    width: 45%;
+  }
+}
+
+.form-width {
+  width: 100%;
+}
+
+@include breakpoint(desktop) {
+  .form-width {
+    width: 75%;
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.btn-100 {
+  width: 100%;
+}
+
+.padding-b-16 {
+  padding-bottom: 0.888rem;
+}
+
+.padding-b-18 {
+  padding-bottom: 1rem;
+}
+.padding-b-36 {
+  padding-bottom: 2rem;
+}
+
+.margin-m-23 {
+  margin-bottom: 1.277rem;
+}
+
+.margin-r-5 {
+  margin-right: 0.5rem;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-blur {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  bottom: -15px;
+  width: 90%;
+  height: 50px;
+  background: #913c00;
+  opacity: 0.25;
+  filter: blur(10px);
+  border-radius: 15px;
+}
+
+.filter-blur--no-blur {
+  display: none;
+}

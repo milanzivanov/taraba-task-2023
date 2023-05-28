@@ -1,0 +1,83 @@
+header.header {
+  position: relative;
+  z-index: 20;
+  background-color: $primary-bg;
+  box-shadow: 0px 1px 16px rgba(255, 120, 0, 0.2);
+  padding: 1rem 0;
+}
+
+@include breakpoint(desktop) {
+  header.header {
+    box-shadow: 0 2px 10px rgba(45, 45, 45, 0.1);
+    padding: 2.222rem 0;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+nav.nav {
+  display: none;
+}
+
+@include breakpoint(desktop) {
+  nav.nav {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  padding-right: 0.888rem;
+}
+
+.nav__link {
+  color: $primary-text-color;
+}
+
+.header-mobile {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+@include breakpoint(desktop) {
+  .header-mobile {
+    gap: 1rem;
+  }
+}
+
+.header-mobile__link {
+  display: flex;
+  align-items: center;
+}
+
+.header-mobile__link--pr {
+  padding-right: 0.888rem;
+}
+
+.header-mobile__link--hamburger {
+  display: flex;
+}
+
+@include breakpoint(desktop) {
+  .header-mobile__link--hamburger {
+    display: none;
+  }
+}
+
+@include breakpoint(desktop) {
+}
+@include breakpoint(extra-large-desktop) {
+}

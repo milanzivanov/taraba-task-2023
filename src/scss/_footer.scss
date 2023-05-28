@@ -1,0 +1,152 @@
+.footer {
+  background-color: $white;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@include breakpoint(desktop) {
+  .footer-container {
+    flex-direction: row;
+  }
+}
+
+.footer-container__social {
+  flex: auto;
+  background-color: $white;
+  padding: 1rem 0 0.888rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@include breakpoint(desktop) {
+  .footer-container__social {
+    padding: 0 0 0 1rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.footer-social__copyright--desktop {
+  display: none;
+}
+
+.footer-social__copyright--mobile {
+  display: block;
+  text-align: center;
+  padding: 1rem 0 10rem 0;
+}
+
+@include breakpoint(desktop) {
+  .footer-social__copyright--mobile {
+    display: none;
+  }
+
+  .footer-social__copyright--desktop {
+    display: flex;
+  }
+}
+
+.footer-logo {
+  display: inline-block;
+}
+
+.footer-logo__size {
+  width: 150px;
+}
+
+.footer-social__list {
+  display: flex;
+  padding: 0 0 3.443rem 0;
+}
+
+.footer-social__link {
+  display: inline-block;
+  padding-right: 0.444rem;
+}
+
+// terms and links
+.footer-container__links {
+  flex: auto;
+  background-color: $white;
+  padding: 0 0 0.888rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@include breakpoint(desktop) {
+  .footer-container__links {
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@include breakpoint(extra-large-desktop) {
+  .footer-container__links {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
+
+.footer-links__list-terms {
+  display: flex;
+  a {
+    margin-right: 1rem;
+  }
+}
+
+.footer-links__list {
+  padding: 0 0 1.944rem 0;
+  text-align: center;
+}
+
+@include breakpoint(desktop) {
+  .footer-links__list {
+    text-align: start;
+  }
+}
+
+// family logos
+.footer-container__our-family {
+  flex: 0 1 30%;
+  background-color: #d7d7d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 2.222rem;
+  box-shadow: none;
+
+  p {
+    padding-bottom: 1rem;
+  }
+}
+
+@include breakpoint(desktop) {
+  .footer-container__our-family {
+    flex: 0 1 35%;
+  }
+}
+
+.footer-our-family__items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.9rem;
+}
+
+.footer-our-family__link {
+  flex: 0 1 25%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 0.3rem 0.7rem;
+}

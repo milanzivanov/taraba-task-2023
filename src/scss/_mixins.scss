@@ -1,0 +1,53 @@
+@mixin flexCHV {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin primary-gradient-orange-bg {
+  background: linear-gradient(
+    180deg,
+    $primary-orange-color 17.19%,
+    $white 100%
+  );
+}
+
+/* ----------------- Media queris mobile first
+----------------------------------------------------------------------- */
+
+@mixin breakpoint($point) {
+  @if $point == "desktop" {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  } @else if $point == "extra-large-desktop" {
+    @media only screen and (min-width: 1366px) {
+      @content;
+    }
+  } @else {
+    @media only screen and (min-width: $point) {
+      @content;
+    }
+  }
+}
+
+/* ----------------- Media queris desktop first
+----------------------------------------------------------------------- */
+
+// @mixin breakpoint ($point) {
+//     @if $point == 'mobile' {
+//         @media only screen and (min-width: 120px) and (max-width : 767px) { @content; }
+//     }
+
+//     @else if $point == 'tablet' {
+//         @media only screen and (min-width: 768px) and (max-width : 1399px) { @content; }
+//     }
+
+//     @else if $point == 'desktop' {
+//         @media only screen and (min-width: 1400px) { @content; }
+//     }
+
+//     @else {
+//         @media only screen and (min-width: $point) { @content; }
+//     }
+// }

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="html css task from taraba 2023" />
+    <title>Signup Bolt</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/slick-carousel/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/magnific-popup/dist/magnific-popup.css"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+
+    <script defer src="./dist/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper-inner">
+        <div class="header-container">
+          <div class="header-container__logo">
+            <a href="./index.html">
+              <svg class="icon icon-bolt-logo">
+                <use
+                  xlink:href="./src/assets/SVG/symbol-defs.svg#icon-bolt-logo"
+                ></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#"
+                  ><span class="capitalize-font">generate</span>
+                  <span class="uppercase-font">qr</span>
+                  <span class="capitalize-font">codes</span></a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"
+                  ><span class="capitalize-font">pricing</span></a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="./login.html" class="no-padding sign-in__btn--active">
+                  <span><span class="capitalize-font">log</span> in</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="btn sign-in__btn btn--border-orange"
+                  href="./signup.html"
+                >
+                  <span class="capitalize-font">sign</span> up</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="header-mobile">
+            <a class="header-mobile__link header-mobile__link--pr" href="#">
+              <svg class="icon svg-theme-icom">
+                <use
+                  xlink:href="./src/assets/SVG/symbol-defs.svg#icon-theme-icon"
+                ></use>
+              </svg>
+            </a>
+            <a
+              class="header-mobile__link header-mobile__link--hamburger"
+              href="#"
+            >
+              <svg class="icon svg-mobile-icon">
+                <use
+                  xlink:href="./src/assets/SVG/symbol-defs.svg#icon-menu-icon"
+                ></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ////////// signup /////////// -->
+    <main class="main main-form">
+      <div class="main__container">
+        <div class="wrapper-inner">
+          <div class="hero">
+            <div class="main-form__container">
+              <div class="hero__box">
+                <h2
+                  class="hero__item primary-h2-heading primary-heading--p padding-b-36"
+                >
+                  <span class="primary-heading--orange"
+                    ><span class="capitalize-font">sign</span> up</span
+                  >
+                </h2>
+                <p class="default-paragraph-text padding-b-36">
+                  Welcome back to Bolt account. Enjoy all the benefits it
+                  offers!
+                </p>
+
+                <form class="form form-width">
+                  <div class="form__input">
+                    <input
+                      class="input__box"
+                      type="text"
+                      placeholder="Your name*"
+                    />
+                    <input
+                      class="input__box"
+                      type="text"
+                      placeholder="Your email*"
+                    />
+                    <input
+                      class="input__box"
+                      type="text"
+                      placeholder="Your password*"
+                    />
+                  </div>
+
+                  <div class="form__checkbox">
+                    <label class="form__checkbox--remember-me">
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark-box">
+                        <svg class="icon icon-checkbox-svg">
+                          <use
+                            xlink:href="./src/assets/SVG/symbol-defs.svg#icon-validation"
+                          ></use>
+                        </svg>
+                      </span>
+                      <span class="checkmark-checked">
+                        <svg class="icon icon-checkbox-svg">
+                          <use
+                            xlink:href="./src/assets/SVG/symbol-defs.svg#icon-chech-box"
+                          ></use>
+                        </svg>
+                      </span>
+                      <span class="default-paragraph-text paddnig-l">
+                        <span class="capitalize-font">please</span> confirm that
+                        you have read and understood the <br />
+                        Therms and Conditions and Privacy Policy of the
+                        site.*</span
+                      >
+                    </label>
+                  </div>
+
+                  <div class="form__btn">
+                    <div class="form__btn--width">
+                      <a
+                        href="#"
+                        class="btn btn--bg-orange hero-container__btn--orange"
+                        ><span class="capitalize-font">generate</span>
+                        <span class="uppercase-font">qr</span> codes</a
+                      >
+                      <div class="filter-blur"></div>
+                    </div>
+                  </div>
+
+                  <div class="form-action">
+                    <div class="form-action__container">
+                      <p class="default-paragraph-text">
+                        <span class="capitalize-font">if</span> you allready
+                        have account, please
+                      </p>
+                      <a
+                        href="./login.html"
+                        class="form-action__link default-paragraph-text--orange"
+                        ><span class="capitalize-font"
+                          ><span class="capi">sign</span> in</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="hero__box hero__box--hidden-active">
+                <img
+                  src="./src/assets/sign-up-illustration.png"
+                  alt="signup illustration image girl with big key"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer sectione -->
+    <footer class="footer">
+      <div class="wrapper-inner">
+        <div class="footer-container">
+          <div class="footer-container__social">
+            <a href="#" class="footer-logo padding-b-18">
+              <svg class="icon footer-logo__icon footer-logo__size">
+                <use
+                  xlink:href="./src/assets/SVG/symbol-defs.svg#icon-taraba-logo-latin-full-color-white-1"
+                ></use>
+              </svg>
+            </a>
+
+            <ul class="footer-social__list">
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg class="icon footer-logo__icon svg-34">
+                    <use
+                      xlink:href="./src/assets/SVG/symbol-defs.svg#icon-linked-in-large"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg class="icon footer-logo__icon svg-34">
+                    <use
+                      xlink:href="./src/assets/SVG/symbol-defs.svg#icon-instagram-large"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg class="icon footer-logo__icon svg-34">
+                    <use
+                      xlink:href="./src/assets/SVG/symbol-defs.svg#icon-you-tube-large"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg class="icon footer-logo__icon svg-34">
+                    <use
+                      xlink:href="./src/assets/SVG/symbol-defs.svg#icon-facebook-large"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+            <div
+              class="footer-social__copyright footer-social__copyright--desktop"
+            >
+              <p class="small-text">
+                <span class="capitalize-font">copyright</span> &copy; 2021
+                <span class="capitalize-font">taraba</span>.
+                <span class="capitalize-font">all</span> rights reserve.
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-container__links">
+            <p class="default-paragraph-text--16">
+              <span class="capitalize-font">quick</span> links
+            </p>
+
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a
+                  href="#"
+                  class="footer-links__link default-paragraph-text--16 border-b-1"
+                  ><span class="capitalize-font">generate</span>
+                  <span class="uppercase-font">qr</span> codes</a
+                >
+              </li>
+              <li class="footer-links__item">
+                <a
+                  href="#"
+                  class="footer-links__link default-paragraph-text--16 border-b-1"
+                  ><span class="capitalize-font">pricing</span></a
+                >
+              </li>
+            </ul>
+
+            <div class="footer-links__terms">
+              <ul class="footer-links__list-terms">
+                <li>
+                  <a
+                    href="#"
+                    class="footer-links__link default-paragraph-text--orange border-b-1--orange"
+                  >
+                    <span class="capitalize-font">terms</span
+                    >&nbsp;and&nbsp;<span class="capitalize-font"
+                      >conditions</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-links__link default-paragraph-text--orange border-b-1--orange"
+                  >
+                    <span class="capitalize-font">privacy</span
+                    ><span class="capitalize-font">&nbsp;policy</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-container__our-family">
+            <p class="default-paragraph-text--16 text-center">
+              <span class="capitalize-font">our&nbsp;</span>family
+            </p>
+
+            <div class="footer-our-family__items">
+              <a href="#" class="footer-our-family__link">
+                <svg class="icon footer-logo__icon footer-svg-logo__100">
+                  <use
+                    xlink:href="./src/assets/SVG/symbol-defs.svg#icon-portal-logo-lat-solid-white-1"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#" class="footer-our-family__link">
+                <svg class="icon footer-logo__icon footer-svg-logo__100">
+                  <use
+                    xlink:href="./src/assets/SVG/symbol-defs.svg#icon-trb-tech-logo-solid-white-1-1"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#" class="footer-our-family__link">
+                <svg class="icon footer-logo__icon footer-svg-logo__100">
+                  <use
+                    xlink:href="./src/assets/SVG/symbol-defs.svg#icon-trb-edu-logo-solid-white"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#" class="footer-our-family__link">
+                <svg class="icon footer-logo__icon footer-svg-logo__100">
+                  <use
+                    xlink:href="./src/assets/SVG/symbol-defs.svg#icon-oakly-logo-full-color-9"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-social__copyright footer-social__copyright--mobile">
+        <p class="small-text">
+          <span class="capitalize-font">copyright</span> &copy; 2021
+          <span class="capitalize-font">taraba</span>.
+          <span class="capitalize-font">all</span> rights reserve.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

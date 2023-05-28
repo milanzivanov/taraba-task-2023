@@ -1,0 +1,101 @@
+///////////////
+// icons
+.icon {
+  display: inline-block;
+  width: 22px;
+  height: 28px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: $primary-text-color;
+}
+
+.icon-bolt-logo {
+  width: 87px;
+  height: 23px;
+}
+
+@include breakpoint(desktop) {
+  .icon-bolt-logo {
+    width: 147px;
+    height: 39px;
+  }
+}
+
+.footer-svg-logo__100 {
+  width: 100px;
+  height: 20px;
+}
+
+.svg-mobile-icon {
+  width: 27px;
+  height: 12px;
+}
+
+.svg-theme-icom {
+  width: 18px;
+  height: 24px;
+}
+
+.svg-34 {
+  width: 34px;
+  height: 34px;
+}
+
+.svg-25 {
+  width: 25px;
+  height: 25px;
+}
+
+.svg-28 {
+  width: 28px;
+  height: 28px;
+}
+
+.svg-18 {
+  fill: $third-bg;
+  width: 18px;
+  margin-right: 0.5rem;
+}
+
+.svg-orange-color-primary {
+  fill: #ffb769;
+}
+.svg-orange-color-secondery {
+  fill: #ff7800;
+}
+.svg-orange-color-tertiary {
+  fill: #ffa039;
+}
+
+.icon-checkbox-svg {
+  fill: transparent;
+}
+
+.svg-no-stroke {
+  stroke: transparent;
+}
+
+///////////
+// buttons
+.btn {
+  color: $primary-text-color;
+  text-align: center;
+  padding: 14px 22px 11px 23px;
+  border-radius: 15px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn--bg-orange {
+  color: $primary-bg;
+  background-color: $primary-orange-color;
+}
+
+.btn--border-orange {
+  border: 1px solid $primary-orange-color;
+}
+
+.btn--bg-orange-inset {
+  box-shadow: -2px -2px 6px 0px #ff7800 inset;
+}

@@ -1,0 +1,144 @@
+.primary-h1-heading {
+  font-family: $primary-font;
+  font-size: 3.8144rem;
+  line-height: 1.1;
+  color: $black-color;
+  padding-bottom: 0.888rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+@include breakpoint(desktop) {
+  .primary-h1-heading {
+    width: 75%;
+  }
+}
+
+.primary-heading--orange {
+  color: $primary-orange-color;
+}
+
+.primary-h2-heading {
+  font-family: $primary-font;
+  font-size: 2.441rem;
+  color: $primary-text-color;
+  line-height: 1.407;
+}
+
+.primary-heading--p {
+  padding: 1rem 0;
+}
+
+.primary-h3-heading {
+  font-family: $primary-font;
+  color: $primary-text-color;
+  font-size: 1.953rem;
+  font-weight: 700;
+}
+
+.primary-h4-heading {
+  font-family: $primary-font;
+  font-weight: 700;
+  color: $primary-text-color;
+  font-size: 1.225rem;
+  line-height: 1.488;
+  padding-bottom: 0.444rem;
+}
+
+.primary-h4-heading--orange {
+  color: $secondery-orange;
+}
+
+.primary-h5-heading {
+  font-family: $primary-font;
+  font-weight: 700;
+  color: $primary-text-color;
+  font-size: 1rem;
+  line-height: 1.08;
+}
+
+@include breakpoint(desktop) {
+  .primary-h5-heading {
+    font-size: 0.8rem;
+  }
+}
+
+.primary-h5-heading--not-active {
+  display: inline-block;
+  border-bottom: 1px solid #999898;
+}
+.primary-h5-heading--active {
+  display: inline-block;
+  border-bottom: 3px solid #fafafa;
+}
+
+.border-b-1 {
+  border-bottom: 1px solid #666;
+}
+
+.border-b-1--orange {
+  border-bottom: 1px solid #ffa039;
+}
+
+.default-paragraph-text {
+  font-family: $secondery-font;
+  font-size: 0.444rem;
+  color: $paragraph-text-color;
+}
+
+@include breakpoint(desktop) {
+  .default-paragraph-text {
+    font-size: 1rem;
+  }
+}
+
+.default-paragraph-text--p {
+  padding-bottom: 2.611rem;
+}
+
+@include breakpoint(desktop) {
+  .default-paragraph-text--p {
+    padding-bottom: 0;
+  }
+}
+
+.default-paragraph-text--16 {
+  font-family: $primary-font;
+  font-size: 0.888rem;
+  font-weight: 700;
+  color: $paragraph-text-color;
+}
+.default-paragraph-text--orange {
+  color: #ffa039;
+}
+
+.default-paragraph-text--line-through {
+  text-decoration: line-through;
+}
+
+.small-text {
+  font-family: $primary-font;
+  font-size: 0.444rem;
+  font-weight: 500;
+  color: $paragraph-text-color;
+}
+
+@include breakpoint(desktop) {
+  .small-text {
+    font-size: 0.666rem;
+  }
+}
+
+.uppercase-font {
+  text-transform: uppercase;
+}
+
+.capitalize-font {
+  text-transform: capitalize;
+}
+
+.primary-box-heading {
+  p {
+    padding-bottom: 2.611rem;
+  }
+}
