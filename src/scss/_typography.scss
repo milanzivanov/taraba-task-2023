@@ -48,7 +48,7 @@
 }
 @include breakpoint(extra-large-desktop) {
   .primary-heading--p {
-    padding: 2rem 0 1rem 0;
+    padding: 0 0 1rem 0;
   }
 }
 
@@ -98,9 +98,17 @@
 }
 
 .primary-h5-heading--not-active {
-  display: inline-block;
+  display: block;
   border-bottom: 1px solid #999898;
+  margin: 0 1rem 1.277rem 0;
 }
+
+@include breakpoint(extra-large-desktop) {
+  .primary-h5-heading--not-active {
+    display: inline-block;
+  }
+}
+
 .primary-h5-heading--active {
   display: inline-block;
   border-bottom: 3px solid $primary-bg;
