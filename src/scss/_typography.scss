@@ -83,14 +83,15 @@
 
 .default-paragraph-text {
   font-family: $secondery-font;
-  font-size: 0.444rem;
+  font-size: 1rem;
   color: $paragraph-text-color;
 }
 
+.default-paragraph-text--small {
+  font-size: 0.444rem;
+}
+
 @include breakpoint(desktop) {
-  .default-paragraph-text {
-    font-size: 1rem;
-  }
 }
 
 .default-paragraph-text--p {
