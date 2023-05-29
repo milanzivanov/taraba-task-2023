@@ -598,3 +598,18 @@ section.features {
   gap: 1rem;
   padding-bottom: 1rem;
 }
+
+.hide {
+  display: none;
+}
+
+@include breakpoint(desktop) {
+  .hide {
+    display: inline-block;
+  }
+}
+@include breakpoint(extra-large-desktop) {
+  .hide {
+    display: none;
+  }
+}
