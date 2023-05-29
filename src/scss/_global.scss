@@ -81,16 +81,6 @@ select {
   margin: 0 auto;
 }
 
-.default-paragraph-text--width {
-  width: 80%;
-}
-
-@include breakpoint(desktop) {
-  .default-paragraph-text--width {
-    width: 45%;
-  }
-}
-
 .form-width {
   width: 100%;
 }
@@ -109,22 +99,11 @@ select {
   width: 100%;
 }
 
-.padding-b-16 {
-  padding-bottom: 0.888rem;
-}
-
-.padding-b-18 {
-  padding-bottom: 1rem;
-}
-.padding-b-36 {
-  padding-bottom: 2rem;
-}
-
-.margin-m-23 {
+.primary-h5-heading--mb {
   margin-bottom: 1.277rem;
 }
 
-.margin-r-5 {
+.svg-icon-margin-r {
   margin-right: 0.5rem;
 }
 
@@ -150,4 +129,20 @@ select {
 
 .filter-blur--no-blur {
   display: none;
+}
+
+.border-b-1 {
+  border-bottom: 1px solid $paragraph-text-color;
+}
+
+.border-b-1--orange {
+  border-bottom: 1px solid $primary-orange-color;
+}
+
+.uppercase-font {
+  text-transform: uppercase;
+}
+
+.capitalize-font {
+  text-transform: capitalize;
 }

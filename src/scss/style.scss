@@ -44,7 +44,7 @@
   .hero__container {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 0 0 1rem;
+    padding: 0 1rem;
   }
 }
 
@@ -175,12 +175,12 @@ section.generator {
 @include breakpoint(desktop) {
   .generator-container {
     padding-bottom: 4.055rem;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 }
 
 .generator-container--reverse {
-  flex-direction: column-reverse;
+  flex-direction: column;
   order: 1;
 }
 
@@ -209,7 +209,17 @@ section.generator {
   }
 }
 
-li.generator-container__item {
+.generator-container__list {
+  padding: 1rem 0;
+}
+
+@include breakpoint(desktop) {
+  .generator-container__list {
+    padding: 0.5rem 0;
+  }
+}
+
+.generator-container__item {
   display: flex;
   align-items: center;
 }
@@ -236,7 +246,7 @@ iframe.generator-container__iframe {
 ///////////////
 // features
 section.features {
-  background: rgba($third-bg, 0.1);
+  background: rgba($tertiary-bg, 0.1);
   padding: 0 1rem;
 }
 
@@ -327,16 +337,22 @@ section.features {
 
 .types-container__item-copy {
   position: relative;
-  padding: 4.944rem 1.6666rem 3.777rem;
+  padding: 4.944rem 0.7666rem 3.777rem;
   z-index: 10;
   background-color: $white;
   border-radius: 15px;
 }
 
+@include breakpoint(desktop) {
+  .types-container__item-copy {
+    padding: 4.944rem 1.6666rem 3.777rem;
+  }
+}
+
 //////////////////
 // pricing
 .pricing {
-  background-color: rgba($secondery-bg, 20%);
+  background-color: rgba($secondery-bg, 0.3);
 }
 
 .pricing-container {
@@ -346,20 +362,6 @@ section.features {
 @include breakpoint(extra-large-desktop) {
   .pricing-container {
     padding: 0;
-  }
-}
-
-.pricing-container__plan {
-  padding: 0 0 4.611rem 0;
-
-  // scroll
-  width: 100%;
-  overflow-x: scroll;
-}
-
-@include breakpoint(extra-large-desktop) {
-  .pricing-container__plan {
-    overflow-x: inherit;
   }
 }
 
@@ -378,10 +380,29 @@ section.features {
   }
 }
 
+.pricing-container-item__box {
+  position: relative;
+  flex: 0 1 15%;
+}
+
+.pricing-container__plan {
+  padding: 0 0 4.611rem 0;
+
+  // scroll
+  width: 100%;
+  overflow-x: scroll;
+}
+
+@include breakpoint(extra-large-desktop) {
+  .pricing-container__plan {
+    overflow-x: inherit;
+  }
+}
+
 .pricing-container__items {
   display: flex;
   gap: 0.5rem;
-  width: 400%;
+  width: 375%;
   overflow-x: scroll;
   position: relative;
   padding: 2rem 0;
@@ -465,11 +486,6 @@ section.features {
   background-color: transparent;
 }
 
-.pricing-container-item__box {
-  position: relative;
-  flex: 0 1 15%;
-}
-
 ////////////
 // form section
 .main-form {
@@ -505,7 +521,7 @@ section.features {
   padding: 14px 0 15px 17px;
   margin-bottom: 1rem;
 
-  background-color: #fafafa;
+  background-color: $primary-bg;
   border-radius: 15px;
   border: 1px solid #999898;
 }

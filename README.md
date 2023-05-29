@@ -19,4 +19,4 @@ In this proejct, Gulp is configured to run the following functions:
 - Uglify the JS files
 - Move final CSS and JS files to the `/dist` folder
 
-Task link preview [Go to site](https://taraba-task-2023.netlify.app/).
+Task link preview [Go to the site with the speed of a bolt](https://taraba-task-2023.netlify.app/).

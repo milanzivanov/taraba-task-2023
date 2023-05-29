@@ -1,3 +1,4 @@
+// heading
 .primary-h1-heading {
   font-family: $primary-font;
   font-size: 2.8144rem;
@@ -21,13 +22,25 @@
 
 .primary-h2-heading {
   font-family: $primary-font;
-  font-size: 2.441rem;
+  font-size: 1.7rem;
   color: $primary-text-color;
   line-height: 1.407;
 }
 
+@include breakpoint(desktop) {
+  .primary-h2-heading {
+    font-size: 2.441rem;
+  }
+}
+
 .primary-heading--p {
   padding: 1rem 0;
+}
+
+@include breakpoint(desktop) {
+  .primary-heading--p {
+    padding: 0 0 1rem 0;
+  }
 }
 
 .primary-h3-heading {
@@ -70,28 +83,45 @@
 }
 .primary-h5-heading--active {
   display: inline-block;
-  border-bottom: 3px solid #fafafa;
+  border-bottom: 3px solid $primary-bg;
 }
 
-.border-b-1 {
-  border-bottom: 1px solid #666;
+.primary-box-heading {
+  p {
+    padding-bottom: 1rem;
+  }
 }
 
-.border-b-1--orange {
-  border-bottom: 1px solid #ffa039;
-}
-
+// paragraph
 .default-paragraph-text {
   font-family: $secondery-font;
-  font-size: 1rem;
+  font-size: 0.777rem;
   color: $paragraph-text-color;
+  padding-bottom: 0.3rem;
+}
+
+@include breakpoint(extra-large-desktop) {
+  .default-paragraph-text {
+    font-size: 1rem;
+  }
+}
+
+.default-paragraph-text--light-black {
+  color: $primary-text-color;
+}
+
+.default-paragraph-text--width {
+  width: 80%;
+}
+
+@include breakpoint(desktop) {
+  .default-paragraph-text--width {
+    width: 45%;
+  }
 }
 
 .default-paragraph-text--small {
   font-size: 0.444rem;
-}
-
-@include breakpoint(desktop) {
 }
 
 .default-paragraph-text--p {
@@ -111,7 +141,7 @@
   color: $paragraph-text-color;
 }
 .default-paragraph-text--orange {
-  color: #ffa039;
+  color: $primary-orange-color;
 }
 
 .default-paragraph-text--line-through {
@@ -120,27 +150,13 @@
 
 .small-text {
   font-family: $primary-font;
-  font-size: 0.444rem;
+  font-size: 0.4444rem;
   font-weight: 500;
   color: $paragraph-text-color;
 }
 
-@include breakpoint(desktop) {
+@include breakpoint(extra-large-desktop) {
   .small-text {
-    font-size: 0.666rem;
-  }
-}
-
-.uppercase-font {
-  text-transform: uppercase;
-}
-
-.capitalize-font {
-  text-transform: capitalize;
-}
-
-.primary-box-heading {
-  p {
-    padding-bottom: 2.611rem;
+    font-size: 0.6666rem;
   }
 }
