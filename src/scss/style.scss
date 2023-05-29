@@ -405,7 +405,7 @@ section.features {
   width: 375%;
   overflow-x: scroll;
   position: relative;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 @include breakpoint(desktop) {
@@ -443,7 +443,7 @@ section.features {
 
 .btn.pricing-container__most-popular-btn {
   position: absolute;
-  width: 50%;
+  width: 55%;
   top: -40px;
   left: 50%;
   transform: translate(-50%);
