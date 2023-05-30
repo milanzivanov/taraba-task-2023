@@ -613,3 +613,12 @@ section.features {
     display: none;
   }
 }
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: $primary-text-color;
+}
+
+::placeholder {
+  color: $primary-text-color;
+}
